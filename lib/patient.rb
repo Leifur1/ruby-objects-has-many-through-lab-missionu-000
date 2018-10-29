@@ -19,4 +19,4 @@ class Patient
 
   def doctors
   end
-  
+end
