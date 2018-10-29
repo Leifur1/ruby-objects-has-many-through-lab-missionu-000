@@ -8,4 +8,14 @@ class Songs
     @genre = genre
     @@all << self
   end
+
+  def self.all
+    @all
+  end
+
+  def genre
+  end
+
+  def artist
+  end
 end
