@@ -2,6 +2,7 @@ class Genre
   attr_accessor :name
 
   @@all = []
+
   def initialize(name)
     @name = name
     @@all << self
@@ -12,9 +13,7 @@ class Genre
   end
 
   def songs
-    Song.all do |song|
-      song.genre == self
-    end
+    Song.all { |song| song.genre == self }
   end
 
   def artists
