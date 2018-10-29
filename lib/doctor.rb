@@ -12,6 +12,7 @@ class Doctor
   end
 
   def appointments
+    @@all
   end
 
   def patients
